@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src:url("./1.components/atoms/fonts/5640036d-d549-4f16-b31e-87da78d9e832.eot?#iefix");
+        src:url("./1.components/atoms/fonts/5640036d-d549-4f16-b31e-87da78d9e832.eot?#iefix") format("eot"),url("./1.components/atoms/fonts/240c57a0-fdce-440d-9ce3-85e0cb56f470.woff2") format("woff2"),url("./1.components/atoms/fonts/7802e576-2ffa-4f22-a409-534355fbea79.woff") format("woff"),url("./1.components/atoms/fonts/14d824a2-2a5c-4692-8e30-74f6e177b675.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src:url("./1.components/atoms/fonts/cb0d1e8a-e111-4dbf-82c2-e948aba954c0.eot?#iefix");
+  src:url("./1.components/atoms/fonts/cb0d1e8a-e111-4dbf-82c2-e948aba954c0.eot?#iefix") format("eot"),url("./1.components/atoms/fonts/f9c5199e-a996-4c08-9042-1eb845bb7495.woff2") format("woff2"),url("./1.components/atoms/fonts/2a34f1f8-d701-4949-b12d-133c1c2636eb.woff") format("woff"),url("./1.components/atoms/fonts/fdf10d5e-4ce0-45e5-a6c1-5eaff6cb1c11.ttf") format("truetype");
+}
+
+html, body{
+  height: 100%;
+  font-family: "HelveticaNeue", "Arial", sans-serif !important;
+}
+
+/* Some quick font styles */
+
+a, p, h1, h2, h3{
+  color: #333;
+  text-decoration: none;
+}
+
+#root{
+  background: #fff;
+  height: 100%;
+  overflow: auto;
+}
+
+main{
+  background: #fff;
+  overflow: hidden;
+}
+
+/* global styles */
+
+.NG-buttons{
+  background-color: 'orange' !important;
+}
