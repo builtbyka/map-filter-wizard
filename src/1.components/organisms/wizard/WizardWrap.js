@@ -31,7 +31,7 @@ function Wizard({ stage }) {
           <MileStone stage={stage} milestones={mileStones} />
           {stage === 'location'
             && (
-            <LocationWizard stage={stage} title="Type postcode or LatLng" />
+            <LocationWizard stage={stage} title="Enter the postcode of your desired location" />
             )}
           {error
             && (

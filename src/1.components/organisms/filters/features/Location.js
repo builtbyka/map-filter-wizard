@@ -60,10 +60,9 @@ function Location({ title }) {
             if (json.status === 200) {
               setLocationLoading(false);
               console.log(json.result);
-              const { postcode, latitude, longitude } = json.result;
-              setLocationSet(true);
+              const { postcode } = json.result;
               if (!locationIsActive) action();
-              dispatch(updateLocation({ postcode, coordinates: { lat: latitude, lng: longitude } }));
+              dispatch(updateLocation({ postcode }));
             } else {
               setLocationLoading(false);
               setLocationError(true);

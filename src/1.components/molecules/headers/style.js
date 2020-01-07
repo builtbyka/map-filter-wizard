@@ -5,7 +5,7 @@ const useStyles = makeStyles(() => ({
     background: 'rgb(14, 78, 102)',
     borderBottom: '1px solid #979797',
     height: 72,
-    padding: '23px 63px 25px 63px',
+    padding: '23px 0',
     position: 'absolute',
     top: 0,
     width: '100%',

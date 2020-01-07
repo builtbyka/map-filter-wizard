@@ -68,42 +68,42 @@ const MapHandler = ({
   );
 
   useEffect(() => {
-    if (map && markersOn) {
-      const markArr = Object.keys(marks);
-      const datArr = data.map((dat) => dat.id);
-      const dataDiff = difference(datArr, markArr);
-      const markerDiff = difference(markArr, datArr);
-      const dataSame = intersection(markArr, datArr);
+    // if (map && markersOn) {
+    //   const markArr = Object.keys(marks);
+    //   const datArr = data.map((dat) => dat.id);
+    //   const dataDiff = difference(datArr, markArr);
+    //   const markerDiff = difference(markArr, datArr);
+    //   const dataSame = intersection(markArr, datArr);
 
-      // if markers don't currently exist
-      if (dataDiff.length > 0) {
-        const toAdd = data.filter((dat) => dataDiff.includes(dat.id));
-        addMarkers(toAdd);
-      }
-      // hide markers if not in data and visible
-      if (markerDiff.length > 0) {
-        const toHide = Object.keys(marks).filter((mark) => markerDiff.includes(mark));
-        hideMarkers(toHide);
-      }
-      // show marker if in both data and marker
-      if (dataSame.length > 0) {
-        const toShow = Object.keys(marks).filter((mark) => dataSame.includes(mark));
-        showMarkers(toShow);
-      }
-      if (geoMark) {
-        if (geo[geoMark.words]) {
-          Object.keys(geo).forEach((g) => {
-            if (g === geoMark.words) {
-              geo[geoMark.words].setMap(map);
-            } else {
-              geo[geoMark.words].setMap(null);
-            }
-          });
-        } else {
-          addGeoMarkers(geoMark);
-        }
-      }
-    }
+    //   // if markers don't currently exist
+    //   if (dataDiff.length > 0) {
+    //     const toAdd = data.filter((dat) => dataDiff.includes(dat.id));
+    //     addMarkers(toAdd);
+    //   }
+    //   // hide markers if not in data and visible
+    //   if (markerDiff.length > 0) {
+    //     const toHide = Object.keys(marks).filter((mark) => markerDiff.includes(mark));
+    //     hideMarkers(toHide);
+    //   }
+    //   // show marker if in both data and marker
+    //   if (dataSame.length > 0) {
+    //     const toShow = Object.keys(marks).filter((mark) => dataSame.includes(mark));
+    //     showMarkers(toShow);
+    //   }
+    //   if (geoMark) {
+    //     if (geo[geoMark.words]) {
+    //       Object.keys(geo).forEach((g) => {
+    //         if (g === geoMark.words) {
+    //           geo[geoMark.words].setMap(map);
+    //         } else {
+    //           geo[geoMark.words].setMap(null);
+    //         }
+    //       });
+    //     } else {
+    //       addGeoMarkers(geoMark);
+    //     }
+    //   }
+    // }
   });
   const ind = selectedMarker ? data.findIndex((x) => x.id === selectedMarker.cont.id) : 0;
   return (

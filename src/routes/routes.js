@@ -2,9 +2,13 @@
 
 const routes = {
   location: {
-    next: null,
+    next: 'features',
     prev: null,
     skip: null,
+  },
+  features: {
+    next: null,
+    prev: null,
   },
 };
 

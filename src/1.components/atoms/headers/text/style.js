@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
     fontFamily: 'HelveticaNeueBold',
     color: 'white',
     fontSize: '20px',
-    margin: '0 30px',
+    margin: '0 30px 0 20px',
   },
   logoIcon: {
     marginRight: 10,
